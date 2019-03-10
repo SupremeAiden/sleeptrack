@@ -89,12 +89,12 @@
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="@android:dimen/app_icon_size"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
         android:text="Gender"
         android:textColor="@android:color/background_light"
         android:textColorLink="@color/colorAccent"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="272dp" />
+        tools:layout_editor_absoluteY="282dp" />
 </android.support.constraint.ConstraintLayout>
