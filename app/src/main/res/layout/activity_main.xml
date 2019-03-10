@@ -93,6 +93,6 @@
         android:textColor="@android:color/background_light"
         android:textColorLink="@color/colorAccent"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="276dp" />
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="279dp" />
 </android.support.constraint.ConstraintLayout>
