@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">sleeptrack</string>
-    <string name="button_send">First Use</string>
+    <string name="button_send">profile</string>
     <string name="edit_message">Enter the message</string>
     <string name="profile">Profile</string>
     <string name="weight">Weight</string>
     <string name="age">Age</string>
     <string name="gender">Gender</string>
+    <string name="home">Snoozable</string>
+    <string name="view_statistics">View Statistics</string>
+    <string name="daily_log">Daily Log</string>
+    <string name="alarm_settings">Alarm Settings</string>
 </resources>
