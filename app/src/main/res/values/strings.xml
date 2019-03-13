@@ -10,4 +10,5 @@
     <string name="view_statistics">View Statistics</string>
     <string name="daily_log">Daily Log</string>
     <string name="alarm_settings">Alarm Settings</string>
+    <string name="text_statistics">Statistics</string>
 </resources>
