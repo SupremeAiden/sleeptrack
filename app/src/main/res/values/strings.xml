@@ -11,4 +11,9 @@
     <string name="daily_log">Daily Log</string>
     <string name="alarm_settings">Alarm Settings</string>
     <string name="text_statistics">Statistics</string>
+    <string name="dlq1">How long (estimated) did you sleep last night?</string>
+    <string name="dla1">hours</string>
+    <string name="dlq2">Rate the quality of your sleep from 1 - 10:</string>
+    <string name="dlq3">How much energy did you have throughout the day? Rate from 1 - 10:</string>
+    <string name="ok">ok</string>
 </resources>
