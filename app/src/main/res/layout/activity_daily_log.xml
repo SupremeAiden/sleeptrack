@@ -35,29 +35,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
         android:text="@string/dla1"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
@@ -66,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/dlq2"
@@ -74,13 +62,14 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="18dp"
         android:layout_marginTop="32dp"
+        android:background="@android:color/background_light"
         android:dropDownWidth="match_parent"
         android:entries="@array/num_array"
         android:spinnerMode="dropdown"
@@ -106,9 +95,10 @@
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="18dp"
         android:layout_marginTop="32dp"
+        android:background="@android:color/background_light"
         android:entries="@array/num_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,11 +111,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="181dp"
         android:layout_marginLeft="181dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="182dp"
         android:layout_marginRight="182dp"
-        android:layout_marginBottom="120dp"
         android:text="@string/ok"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="90dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/background_light"
+        android:entries="@array/hours_array"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 </android.support.constraint.ConstraintLayout>
