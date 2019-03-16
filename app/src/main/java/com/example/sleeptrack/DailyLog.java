@@ -18,7 +18,6 @@ public class DailyLog extends AppCompatActivity {
         setContentView(R.layout.activity_daily_log);
 
 
-
     }
     public void addListenerOnButton() {
 
