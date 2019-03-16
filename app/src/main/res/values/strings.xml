@@ -56,4 +56,11 @@
         <item>23</item>
         <item>24</item>
     </string-array>
+    <string name="location">location</string>
+    <string name="height">height</string>
+    <string name="sleep_time">sleep time</string>
+    <string name="naps">naps</string>
+    <string name="sleep_type">sleep type</string>
+    <string name="diet">diet</string>
+    <string name="daily_energy">daily energy</string>
 </resources>
