@@ -90,4 +90,5 @@
         <item>normal</item>
         <item>unhealthy</item>
     </string-array>
+    <string name="alarm">warm</string>
 </resources>
