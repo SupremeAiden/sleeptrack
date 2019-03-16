@@ -63,4 +63,31 @@
     <string name="sleep_type">sleep type</string>
     <string name="diet">diet</string>
     <string name="daily_energy">daily energy</string>
+    <string name="birthday">24</string>
+    <string-array name="gender">
+        <item>man</item>
+        <item>woman</item>
+    </string-array>
+    <string name="zip_code">zip code</string>
+    <string-array name="sleep_time">
+        <item>early</item>
+        <item>late</item>
+        <item>normal</item>
+        <item>nocturnal</item>
+    </string-array>
+    <string-array name="naps">
+        <item>regularly</item>
+        <item>infrequent</item>
+        <item>never</item>
+    </string-array>
+    <string-array name="sleep_type">
+        <item>short</item>
+        <item>normal</item>
+        <item>long</item>
+    </string-array>
+    <string-array name="diet_opt">
+        <item>healthy</item>
+        <item>normal</item>
+        <item>unhealthy</item>
+    </string-array>
 </resources>
