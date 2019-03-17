@@ -1,6 +1,7 @@
 package com.example.sleeptrack;
 
 //import android.content.Intent;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,16 +33,16 @@ public class DisplayMessageActivity extends AppCompatActivity {
     }
     public void saveProfileOnButton(){
 
-        spinner4 = (Spinner) findViewById(R.id.spinner4);
-        spinner5 = (Spinner) findViewById(R.id.spinner5);
-        spinner6 = (Spinner) findViewById(R.id.spinner6);
-        spinner7 = (Spinner) findViewById(R.id.spinner7);
-        spinner8 = (Spinner) findViewById(R.id.spinner8);
-        spinner9 = (Spinner) findViewById(R.id.spinner9);
-        editText = (EditText) findViewById(R.id.editText);
-        editText2 = (EditText) findViewById(R.id.editText2);
-        editText3 = (EditText) findViewById(R.id.editText3);
-        editText4 = (EditText) findViewById(R.id.editText4);
+        spinner4 = (Spinner) findViewById(R.id.spinner4); // gender
+        spinner5 = (Spinner) findViewById(R.id.spinner5); // ignore
+        spinner6 = (Spinner) findViewById(R.id.spinner6); // naps
+        spinner7 = (Spinner) findViewById(R.id.spinner7); // energy
+        spinner8 = (Spinner) findViewById(R.id.spinner8); // sleep_type
+        spinner9 = (Spinner) findViewById(R.id.spinner9); // diet
+        editText = (EditText) findViewById(R.id.editText);// age
+        editText2 = (EditText) findViewById(R.id.editText2); // height
+        editText3 = (EditText) findViewById(R.id.editText3); // weight
+        editText4 = (EditText) findViewById(R.id.editText4);//location
         button6 = (Button) findViewById(R.id.button6);
 
         button6.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +57,25 @@ public class DisplayMessageActivity extends AppCompatActivity {
                                 "\nSpinner 3 : "+ String.valueOf(spinner6.getSelectedItem()) +
                                 "\nEditText "+ String.valueOf(editText.getText()),
                         Toast.LENGTH_SHORT).show();
+                String gender = String.valueOf(spinner4.getSelectedItem());
+                String naps = String.valueOf(spinner6.getSelectedItem());
+                String sleep_type = String.valueOf(spinner8.getSelectedItem());
+                String diet = String.valueOf(spinner9.getSelectedItem());
+                String age = String.valueOf(editText.getText());
+                String height = String.valueOf(editText2.getText());
+                String weight = String.valueOf(editText3.getText());
+                String location = String.valueOf(editText4.getText());
+                Intent intent = new Intent();
+                intent.putExtra("gender",gender);
+                intent.putExtra("naps",naps);
+                intent.putExtra("sleep_type",sleep_type);
+                intent.putExtra("diet",diet);
+                intent.putExtra("age",age);
+                intent.putExtra("height",height);
+                intent.putExtra("weight",weight);
+                intent.putExtra("location",location);
+                setResult(2,intent);
+                onBackPressed();
             }
 
         });
