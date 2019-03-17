@@ -11,11 +11,99 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
         android:text="@string/text_statistics"
         android:textColor="@android:color/background_light"
         android:textSize="@android:dimen/app_icon_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EstSleepTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:ems="10"
+        android:inputType="number|text"
+        android:text="Suitable Sleep time:10 hrs"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/DiffSleeptime"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:inputType="number|text"
+        android:text="You need sleep more/less"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/HealthState"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EstSleepTime" />
+
+    <EditText
+        android:id="@+id/HealthState"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|text"
+        android:text="Your health state is good/bad"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/WeightState"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DiffSleeptime" />
+
+    <EditText
+        android:id="@+id/WeightState"
+        android:layout_width="364dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:inputType="number|text"
+        android:text="Good health help you lose/increse weight"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/LocationRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HealthState" />
+
+    <EditText
+        android:id="@+id/LocationRate"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|text"
+        android:text="Your home is a good/bad place for sleeping"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WeightState" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 </android.support.constraint.ConstraintLayout>
