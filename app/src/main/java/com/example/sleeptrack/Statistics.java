@@ -24,15 +24,54 @@ public class Statistics extends AppCompatActivity {
         String quality = packageFromCaller.getString("quality");
         String sleep_type = packageFromCaller.getString("sleep_type");
         String diet = packageFromCaller.getString("diet");
+        int a = Integer.parseInt(age);
+        int h = Integer.parseInt(height);
+        int w = Integer.parseInt(weight);
+        int s = Integer.parseInt(sleep_time);
+        int q = Integer.parseInt(quality);
+        int d = 0;
         TextView T1 = (TextView) findViewById(R.id.EstSleepTime);
-        T1.setText(age);
+        if (a<12){
+            T1.setText("Suitable Sleep time:10 hrs");
+            d = s - 10;
+        }
+        else if (a<40){
+            T1.setText("Suitable Sleep time:8 hrs");
+            d = s - 8;
+        }
+        else{
+            T1.setText("Suitable Sleep time:6 hrs");
+            d = s - 6;
+        }
         TextView T2 = (TextView) findViewById(R.id.DiffSleeptime);
-        T2.setText(gender);
+        if (d<0){
+            T2.setText("You need sleep more");
+        }
+        else{
+            T2.setText("You need sleep less");
+        }
+
         TextView T3 = (TextView) findViewById(R.id.HealthState);
-        T3.setText(height);
+        if (d<0&& diet =="unhealthy"){
+            T3.setText("Your health state is bad");
+        }
+        else{
+            T3.setText("Your health state is good");
+        }
+
         TextView T4 = (TextView) findViewById(R.id.WeightState);
-        T4.setText(weight);
+        if (w>= h-105){
+            T4.setText("Good sleep help you lose weight");
+        }
+        else{
+            T4.setText("Good sleep help you increase weight");
+        }
         TextView T5 = (TextView) findViewById(R.id.LocationRate);
-        T5.setText(sleep_time+energy+quality);
+        if (q>5){
+            T5.setText("Your home is a good place for sleeping");
+        }
+        else{
+            T5.setText("Your home is a bad place for sleeping");
+        }
     }
 }
